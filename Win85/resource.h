@@ -1,0 +1,125 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Win85.rc
+//
+#define IDD_ABOUTBOX                    100
+#define IDD_WIN85_FORM                  101
+#define IDP_SOCKETS_INIT_FAILED         104
+#define IDR_MAINFRAME                   128
+#define IDR_WIN85TYPE                   129
+#define IDR_RUNTOOLBAR                  130
+#define IDD_SPEED_DLG                   130
+#define IDR_WIN85TYPE1                  130
+#define IDR_MAINFRAME1                  131
+#define IDR_BREAKPOINTSTOOLBAR          132
+#define IDD_ASSEMBLY_DLG                136
+#define IDD_CONNECT_DIALOG              137
+#define IDR_HARDWARETOOLBAR             142
+#define IDR_MAINFRAME2                  143
+#define IDD_WAIT_DIALOG                 144
+#define IDR_RUNTOOLBAR1                 144
+#define IDD_BREAKPOINTS_DLG             145
+#define IDD_MEMORY_DLG                  147
+#define IDD_FORMVIEW_REGISTERS          148
+#define IDD_FORMVIEW_MEMORY             149
+#define IDD_FORMVIEW_STACK              150
+#define IDD_FORMVIEW_CPU                151
+#define IDD_INPUT_DLG                   152
+#define IDC_SPEED_SLIDER                1000
+#define IDC_DEVICE_LIST                 1003
+#define IDC_SCROLLBAR_CPU               1011
+#define IDC_SCROLLBAR_STACK             1012
+#define IDC_SCROLLBAR_DUMP              1013
+#define IDC_ASSEMBLY_EDIT               1015
+#define IDC_BREAKPOINTS_LIST            1033
+#define IDC_MEMORY_CFGLIST              1034
+#define IDC_REGISTER_EDIT               1035
+#define IDC_TURBO_CHECK                 1037
+#define IDC_MEMORY_SCROLLBAR            1038
+#define IDC_CPU_SCROLLBAR               1039
+#define IDC_STACK_SCROLLBAR             1040
+#define IDC_INPUT_EDIT                  1041
+#define IDC_RICHEDIT_ABOUT              1043
+#define ID_RUN_RUN                      32771
+#define ID_RUN_GOTOCURSOR               32772
+#define ID_RUN_TRACEINTO                32773
+#define ID_RUN_STEPOVER                 32774
+#define ID_RUN_ANIMATE                  32776
+#define ID_RUN_PROGRAMRESET             32777
+#define ID_VIEW_TOOLBARS_RUN            32786
+#define ID_VIEW_TOOLBAR_RUN             32789
+#define ID_BREAKPOINTS_TOGGLE           32790
+#define ID_BREAKPOINTS_AT               32791
+#define ID_BREAKPOINTS_DELETEALL        32792
+#define ID_VIEW_TOOLBARS_BREAKPOINTS    32798
+#define ID_VIEW_TOOLBAR_BREAKPOINTS     32799
+#define ID_VIEW_TOOLBARS_DEVICES        32805
+#define ID_OPTIONS_SAVEPOSITION         32808
+#define ID_OPTIONS_MEMORYCONFIGURATION  32811
+#define ID_HARDWARE_COPYBINARYTOLPT     32813
+#define ID_VIEW_TOOLBARS_HARDWARE       32815
+#define ID_KEY_DOWN                     32816
+#define ID_KEY_UP                       32817
+#define ID_KEY_LEFT                     32818
+#define ID_KEY_RIGHT                    32819
+#define ID_KEY_PGDOWN                   32820
+#define ID_KEY_PGUP                     32821
+#define ID_KEY_HOME                     32822
+#define ID_KEY_END                      32823
+#define ID_KEY_X                        32824
+#define ID_SWITCH_FOCUS                 32825
+#define ID_KEY_A                        -32710
+#define ID_KEY_C                        -32709
+#define ID_KEY_D                        -32708
+#define ID_KEY_E                        -32707
+#define ID_KEY_H                        -32706
+#define ID_KEY_I                        -32705
+#define ID_KEY_J                        -32704
+#define ID_KEY_L                        -32703
+#define ID_KEY_M                        -32702
+#define ID_KEY_N                        -32701
+#define ID_KEY_O                        -32700
+#define ID_KEY_P                        -32699
+#define ID_KEY_R                        -32698
+#define ID_KEY_S                        -32697
+#define ID_KEY_ESC                      32840
+#define ID_VIEW_BREAKPOINTSDIALOG       32841
+#define ID_RUN_EXECUTETO                32847
+#define ID_RUN_STEPOUT                  32848
+#define ID_BREAKPOINTS_HARDWAREBREAKPOINT 32849
+#define ID_BREAKPOINTS_DISABLE          32850
+#define ID_KEY_CTRL_HOME                32852
+#define ID_KEY_CTRL_END                 32853
+#define ID_KEY_CTRL_PGUP                32854
+#define ID_KEY_CTRL_PGDOWN              32855
+#define ID_SWITCH_FOCUS_BK              32856
+#define ID_KEY_CTRL_UP                  32857
+#define ID_KEY_CTRL_DOWN                32858
+#define ID_KEY_CTRL_LEFT                32859
+#define ID_KEY_CTRL_RIGHT               32860
+#define ID_OPTIONS_EMULATIONSPEED       32861
+#define ID_KEY_0                        32862
+#define ID_KEY_1                        32863
+#define ID_KEY_2                        32864
+#define ID_KEY_3                        32865
+#define ID_KEY_4                        32866
+#define ID_KEY_5                        32867
+#define ID_KEY_6                        32868
+#define ID_KEY_7                        32869
+#define ID_KEY_8                        32870
+#define ID_KEY_9                        32871
+#define ID_KEY_B                        32872
+#define ID_KEY_F                        32873
+#define ID_OPTIONS_SAVEASDEFAULTLAYOUT  32876
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_3D_CONTROLS                     1
+#define _APS_NEXT_RESOURCE_VALUE        153
+#define _APS_NEXT_COMMAND_VALUE         32877
+#define _APS_NEXT_CONTROL_VALUE         1044
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

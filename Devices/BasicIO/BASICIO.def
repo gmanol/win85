@@ -1,0 +1,15 @@
+; BASICIO.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BASICIO"
+DESCRIPTION  'BASICIO Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+gWrite
+gRead
+gConfigure
+gShowWindow
+gHideWindow
+gInitializeIRQ
+gReset
+gDialogMessage

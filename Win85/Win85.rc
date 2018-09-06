@@ -1,0 +1,908 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Win85.ico"
+IDR_WIN85TYPE           ICON                    "res\\Win85Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_RUNTOOLBAR          BITMAP                  "res\\runtoolb.bmp"
+IDR_BREAKPOINTSTOOLBAR  BITMAP                  "res\\breaktoo.bmp"
+IDR_MAINFRAME2          BITMAP                  "res\\mainfram.bmp"
+IDR_RUNTOOLBAR1         BITMAP                  "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+END
+
+IDR_RUNTOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_RUN_RUN
+    BUTTON      ID_RUN_GOTOCURSOR
+    BUTTON      ID_RUN_TRACEINTO
+    SEPARATOR
+    BUTTON      ID_RUN_PROGRAMRESET
+END
+
+IDR_BREAKPOINTSTOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_BREAKPOINTS_TOGGLE
+    BUTTON      ID_BREAKPOINTS_DISABLE
+    BUTTON      ID_BREAKPOINTS_AT
+    SEPARATOR
+    BUTTON      ID_BREAKPOINTS_DELETEALL
+END
+
+IDR_MAINFRAME2 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_RUNTOOLBAR1 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_RUN_RUN
+    BUTTON      ID_RUN_GOTOCURSOR
+    BUTTON      ID_RUN_TRACEINTO
+    BUTTON      ID_RUN_STEPOVER
+    SEPARATOR
+    BUTTON      ID_RUN_ANIMATE
+    SEPARATOR
+    BUTTON      ID_RUN_PROGRAMRESET
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&File",                       ID_VIEW_TOOLBAR
+            MENUITEM "Run",                         ID_VIEW_TOOLBAR_RUN
+            MENUITEM "Breakpoints",                 ID_VIEW_TOOLBAR_BREAKPOINTS
+            MENUITEM "Hardware",                    ID_VIEW_TOOLBARS_HARDWARE
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Devices\tCtrl+D",             ID_VIEW_TOOLBARS_DEVICES
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "&About Win85...",             ID_APP_ABOUT
+    END
+END
+
+IDR_WIN85TYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&File",                       ID_VIEW_TOOLBAR
+            MENUITEM "Run",                         ID_VIEW_TOOLBAR_RUN
+            MENUITEM "Breakpoints",                 ID_VIEW_TOOLBAR_BREAKPOINTS
+            MENUITEM "Hardware",                    ID_VIEW_TOOLBARS_HARDWARE
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Devices\tCtrl+D",             ID_VIEW_TOOLBARS_DEVICES
+        MENUITEM "Breakpoints Dialog\tCtrl+B",  ID_VIEW_BREAKPOINTSDIALOG
+    END
+    POPUP "Run"
+    BEGIN
+        MENUITEM "Run\tF9",                     ID_RUN_RUN
+        MENUITEM "Go to cursor\tF4",            ID_RUN_GOTOCURSOR
+        MENUITEM "Trace into\tF7",              ID_RUN_TRACEINTO
+        MENUITEM SEPARATOR
+        MENUITEM "Program reset\tCtrl+F2",      ID_RUN_PROGRAMRESET
+    END
+    POPUP "Breakpoints"
+    BEGIN
+        MENUITEM "Toggle\tF2",                  ID_BREAKPOINTS_TOGGLE
+        MENUITEM "Disable Breakpoint\tF3",      ID_BREAKPOINTS_DISABLE
+        MENUITEM "At\tAlt+F2",                  ID_BREAKPOINTS_AT
+        MENUITEM SEPARATOR
+        MENUITEM "Delete All",                  ID_BREAKPOINTS_DELETEALL
+    END
+    POPUP "Hardware"
+    BEGIN
+        MENUITEM "Copy binary to LPT\tF12",     ID_HARDWARE_COPYBINARYTOLPT
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Emulation Speed\tCTRL+T",     ID_OPTIONS_EMULATIONSPEED
+        MENUITEM "Save Layout",                 ID_OPTIONS_SAVEASDEFAULTLAYOUT
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "&About Win85...",             ID_APP_ABOUT
+    END
+END
+
+IDR_WIN85TYPE1 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit", GRAYED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&File",                       ID_VIEW_TOOLBAR
+            MENUITEM "Run",                         ID_VIEW_TOOLBAR_RUN
+            MENUITEM "Breakpoints",                 ID_VIEW_TOOLBAR_BREAKPOINTS
+            MENUITEM "Hardware",                    ID_VIEW_TOOLBARS_HARDWARE
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Devices\tCtrl+D",             ID_VIEW_TOOLBARS_DEVICES
+        MENUITEM "Breakpoints Dialog\tCtrl+B",  ID_VIEW_BREAKPOINTSDIALOG
+    END
+    POPUP "Run"
+    BEGIN
+        MENUITEM "Run\tF9",                     ID_RUN_RUN
+        MENUITEM "Go to cursor\tF4",            ID_RUN_GOTOCURSOR
+        MENUITEM "Trace into\tF7",              ID_RUN_TRACEINTO
+        MENUITEM "Step over\tF8",               ID_RUN_STEPOVER
+        MENUITEM "Execute to\tAlt+F9",          ID_RUN_EXECUTETO
+        MENUITEM "Step out\tAlt+F8",            ID_RUN_STEPOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Animate",                     ID_RUN_ANIMATE
+        MENUITEM "Program reset\tCtrl+F2",      ID_RUN_PROGRAMRESET
+    END
+    POPUP "Breakpoints"
+    BEGIN
+        MENUITEM "Toggle\tF2",                  ID_BREAKPOINTS_TOGGLE
+        MENUITEM "Disable Breakpoint\tF3",      ID_BREAKPOINTS_DISABLE
+        MENUITEM "At\tAlt+F2",                  ID_BREAKPOINTS_AT
+        MENUITEM SEPARATOR
+        MENUITEM "Hardware Breakpoint",         ID_BREAKPOINTS_HARDWAREBREAKPOINT
+        MENUITEM SEPARATOR
+        MENUITEM "Delete All",                  ID_BREAKPOINTS_DELETEALL
+    END
+    POPUP "Hardware"
+    BEGIN
+        MENUITEM "Copy binary to LPT\tF12",     ID_HARDWARE_COPYBINARYTOLPT
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Emulation Speed\tCTRL+T",     ID_OPTIONS_EMULATIONSPEED
+        MENUITEM "Save Position",               ID_OPTIONS_SAVEPOSITION
+    END
+    POPUP "&Help", GRAYED
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Win85...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME1 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&File",                       ID_VIEW_TOOLBAR
+            MENUITEM "Run",                         ID_VIEW_TOOLBAR_RUN
+            MENUITEM "Breakpoints",                 ID_VIEW_TOOLBAR_BREAKPOINTS
+            MENUITEM "Hardware",                    ID_VIEW_TOOLBARS_HARDWARE
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Devices\tCtrl+D",             ID_VIEW_TOOLBARS_DEVICES
+    END
+    POPUP "&Help", GRAYED
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Win85...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "0",            ID_KEY_0,               VIRTKEY, NOINVERT
+    "1",            ID_KEY_1,               VIRTKEY, NOINVERT
+    "2",            ID_KEY_2,               VIRTKEY, NOINVERT
+    "3",            ID_KEY_3,               VIRTKEY, NOINVERT
+    "4",            ID_KEY_4,               VIRTKEY, NOINVERT
+    "5",            ID_KEY_5,               VIRTKEY, NOINVERT
+    "6",            ID_KEY_6,               VIRTKEY, NOINVERT
+    "7",            ID_KEY_7,               VIRTKEY, NOINVERT
+    "8",            ID_KEY_8,               VIRTKEY, NOINVERT
+    "9",            ID_KEY_9,               VIRTKEY, NOINVERT
+    "A",            ID_KEY_A,               VIRTKEY, NOINVERT
+    "B",            ID_KEY_B,               VIRTKEY, NOINVERT
+    "B",            ID_VIEW_BREAKPOINTSDIALOG, VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_KEY_C,               VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_KEY_D,               VIRTKEY, NOINVERT
+    "D",            ID_VIEW_TOOLBARS_DEVICES, VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_KEY_E,               VIRTKEY, NOINVERT
+    "F",            ID_KEY_F,               VIRTKEY, NOINVERT
+    "H",            ID_KEY_H,               VIRTKEY, NOINVERT
+    "I",            ID_KEY_I,               VIRTKEY, NOINVERT
+    "J",            ID_KEY_J,               VIRTKEY, NOINVERT
+    "L",            ID_KEY_L,               VIRTKEY, NOINVERT
+    "M",            ID_KEY_M,               VIRTKEY, NOINVERT
+    "N",            ID_KEY_N,               VIRTKEY, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_KEY_O,               VIRTKEY, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_KEY_P,               VIRTKEY, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_KEY_R,               VIRTKEY, NOINVERT
+    "S",            ID_KEY_S,               VIRTKEY, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_OPTIONS_EMULATIONSPEED, VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        ID_KEY_DOWN,            VIRTKEY, NOINVERT
+    VK_DOWN,        ID_KEY_CTRL_DOWN,       VIRTKEY, CONTROL, NOINVERT
+    VK_END,         ID_KEY_END,             VIRTKEY, NOINVERT
+    VK_END,         ID_KEY_CTRL_END,        VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_KEY_ESC,             VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F12,         ID_HARDWARE_COPYBINARYTOLPT, VIRTKEY, NOINVERT
+    VK_F2,          ID_BREAKPOINTS_TOGGLE,  VIRTKEY, NOINVERT
+    VK_F2,          ID_RUN_PROGRAMRESET,    VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          ID_BREAKPOINTS_AT,      VIRTKEY, ALT, NOINVERT
+    VK_F3,          ID_BREAKPOINTS_DISABLE, VIRTKEY, NOINVERT
+    VK_F4,          ID_RUN_GOTOCURSOR,      VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_RUN_TRACEINTO,       VIRTKEY, NOINVERT
+    VK_F9,          ID_RUN_RUN,             VIRTKEY, NOINVERT
+    VK_HOME,        ID_KEY_HOME,            VIRTKEY, NOINVERT
+    VK_HOME,        ID_KEY_CTRL_HOME,       VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_KEY_LEFT,            VIRTKEY, NOINVERT
+    VK_LEFT,        ID_KEY_CTRL_LEFT,       VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_KEY_PGDOWN,          VIRTKEY, NOINVERT
+    VK_NEXT,        ID_KEY_CTRL_PGDOWN,     VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_KEY_PGUP,            VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_KEY_CTRL_PGUP,       VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_KEY_RIGHT,           VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_KEY_CTRL_RIGHT,      VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         ID_SWITCH_FOCUS,        VIRTKEY, NOINVERT
+    VK_TAB,         ID_SWITCH_FOCUS_BK,     VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_KEY_UP,              VIRTKEY, NOINVERT
+    VK_UP,          ID_KEY_CTRL_UP,         VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_KEY_X,               VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW_REGISTERS DIALOG 0, 0, 51, 26
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "REGISTERS",IDC_STATIC,5,10,42,8,NOT WS_VISIBLE
+END
+
+IDD_FORMVIEW_MEMORY DIALOG 0, 0, 56, 51
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "MEMORY",IDC_STATIC,10,5,33,8,NOT WS_VISIBLE
+    SCROLLBAR       IDC_MEMORY_SCROLLBAR,15,20,8,25,SBS_VERT
+END
+
+IDD_FORMVIEW_STACK DIALOG 0, 0, 36, 51
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "STACK",IDC_STATIC,5,10,24,8,NOT WS_VISIBLE
+    SCROLLBAR       IDC_STACK_SCROLLBAR,5,20,8,25,SBS_VERT
+END
+
+IDD_FORMVIEW_CPU DIALOGEX 0, 0, 51, 71
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "CPU",IDC_STATIC,5,35,25,15,NOT WS_VISIBLE | NOT WS_GROUP
+    SCROLLBAR       IDC_CPU_SCROLLBAR,11,5,10,20,SBS_VERT,WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 255, 195
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About Win85"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,174,50,14,WS_GROUP
+    EDITTEXT        IDC_REGISTER_EDIT,7,7,241,160,ES_CENTER | ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "dEUS"
+            VALUE "FileDescription", "Win85 MFC Application"
+            VALUE "FileVersion", "1,0,0,1"
+            VALUE "InternalName", "Win85"
+            VALUE "LegalCopyright", "Copyright (C) 1999-2001"
+            VALUE "LegalTrademarks", "(c) George Manolaros aka emc/d."
+            VALUE "OriginalFilename", "Win85.EXE"
+            VALUE "ProductName", "Win85 Application"
+            VALUE "ProductVersion", "1,0,0,1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_FORMVIEW_REGISTERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 44
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 19
+    END
+
+    IDD_FORMVIEW_MEMORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 49
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_FORMVIEW_STACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 29
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_FORMVIEW_CPU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 44
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Win85 v1.00 - 8085 Emulator"
+    IDR_WIN85TYPE           "\nMachine\nWin85\n\n\nWin85.Document\nWin85 Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Win85"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the File toolbar\nToggle File toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RUN_RUN              "Run program\nRun"
+    ID_RUN_GOTOCURSOR       "Run to cursor\nGo to cursor"
+    ID_RUN_TRACEINTO        "Trace instruction\nTrace"
+    ID_RUN_STEPOVER         "Step over instruction\nStep over"
+    ID_RUN_ANIMATE          "Animate program\nAnimate"
+    ID_RUN_PROGRAMRESET     "Reset program\nReset"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBARS_RUN    "Show or hide the Run toolbar\nToggle Run toolbar"
+    ID_VIEW_TOOLBAR_RUN     "Show or hide the Run toolbar\nToggle Run toolbar"
+    ID_BREAKPOINTS_TOGGLE   "Toggle breakpoint\nToggle breakpoint"
+    ID_BREAKPOINTS_AT       "Place breakpoint at..\nBreakpoint at.."
+    ID_BREAKPOINTS_DELETEALL "Delete all breakpoints\nDelete all breakpoints"
+    ID_VIEW_TOOLBARS_BREAKPOINTS 
+                            "Show or hide the Breakpoints toolbar\nToggle Breakpoints toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BREAKPOINTS_DISABLE  "Disable breakpoint\nDisable breakpoint"
+    ID_OPTIONS_EMULATIONSPEED "Set emulation speed"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Greek (Greece) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ELL)
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_HARDWARETOOLBAR     BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_HARDWARETOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_HARDWARE_COPYBINARYTOLPT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ASSEMBLY_DLG DIALOGEX 0, 0, 181, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Assembly"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ASSEMBLY_EDIT,12,18,108,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,130,9,38,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,130,27,38,14,0,WS_EX_STATICEDGE
+END
+
+IDD_CONNECT_DIALOG DIALOGEX 0, 0, 225, 75
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Devices"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_DEVICE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_TABSTOP,0,0,225,75
+END
+
+IDD_WAIT_DIALOG DIALOG 0, 0, 85, 22
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Please Wait...",IDC_STATIC,17,7,50,13
+END
+
+IDD_BREAKPOINTS_DLG DIALOGEX 0, 0, 120, 99
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "BreakPoints"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_BREAKPOINTS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_TABSTOP,0,0,120,100
+END
+
+IDD_MEMORY_DLG DIALOGEX 0, 0, 135, 303
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Memory Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,0,285,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,55,285,50,14
+    CONTROL         "List1",IDC_MEMORY_CFGLIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,0,0,135,280
+END
+
+IDD_SPEED_DLG DIALOGEX 0, 0, 207, 55
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cpu Speed"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Slider1",IDC_SPEED_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,5,14,197,20
+    LTEXT           "Slower",IDC_STATIC,3,3,35,10
+    RTEXT           "Faster",IDC_STATIC,173,3,28,10
+    CONTROL         "No Delay",IDC_TURBO_CHECK,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,75,39,57,13
+END
+
+IDD_INPUT_DLG DIALOGEX 0, 0, 186, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Enter value"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_INPUT_EDIT,14,17,108,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,134,9,38,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Cancel",IDCANCEL,134,24,38,14,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ASSEMBLY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_CONNECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_WAIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 15
+    END
+
+    IDD_BREAKPOINTS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_MEMORY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+
+    IDD_SPEED_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INPUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Win85.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Greek (Greece) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Win85.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

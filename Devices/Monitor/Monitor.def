@@ -1,0 +1,18 @@
+; Monitor.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Monitor"
+DESCRIPTION  'Device Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+gWrite
+gRead
+gConfigure
+gShowWindow
+gHideWindow
+gInitializeIRQ
+gReset
+gDialogMessage
+
+
+

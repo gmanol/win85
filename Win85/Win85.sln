@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win85", "Win85.vcxproj", "{888548FB-96EE-A4A1-9404-D34B7ED65791}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BASICIO", "..\Devices\BasicIO\BASICIO.vcxproj", "{156064B7-57B2-49B0-80F1-DA86B05EA317}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Keyboard", "..\Devices\Keyboard\Keyboard.vcxproj", "{A2DD8C93-7260-C5D9-A144-665A16C9E69F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Monitor", "..\Devices\Monitor\Monitor.vcxproj", "{1DA81935-93AB-EB77-C524-DAF7147F6BDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Seiko", "..\Devices\Seiko\SeikoDll.vcxproj", "{8D767B93-597E-1C11-83DE-E2AE090494C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{888548FB-96EE-A4A1-9404-D34B7ED65791}.Debug|Win32.ActiveCfg = Debug|Win32
+		{888548FB-96EE-A4A1-9404-D34B7ED65791}.Debug|Win32.Build.0 = Debug|Win32
+		{888548FB-96EE-A4A1-9404-D34B7ED65791}.Release|Win32.ActiveCfg = Release|Win32
+		{888548FB-96EE-A4A1-9404-D34B7ED65791}.Release|Win32.Build.0 = Release|Win32
+		{156064B7-57B2-49B0-80F1-DA86B05EA317}.Debug|Win32.ActiveCfg = Debug|Win32
+		{156064B7-57B2-49B0-80F1-DA86B05EA317}.Debug|Win32.Build.0 = Debug|Win32
+		{156064B7-57B2-49B0-80F1-DA86B05EA317}.Release|Win32.ActiveCfg = Release|Win32
+		{156064B7-57B2-49B0-80F1-DA86B05EA317}.Release|Win32.Build.0 = Release|Win32
+		{A2DD8C93-7260-C5D9-A144-665A16C9E69F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2DD8C93-7260-C5D9-A144-665A16C9E69F}.Debug|Win32.Build.0 = Debug|Win32
+		{A2DD8C93-7260-C5D9-A144-665A16C9E69F}.Release|Win32.ActiveCfg = Release|Win32
+		{A2DD8C93-7260-C5D9-A144-665A16C9E69F}.Release|Win32.Build.0 = Release|Win32
+		{1DA81935-93AB-EB77-C524-DAF7147F6BDC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DA81935-93AB-EB77-C524-DAF7147F6BDC}.Debug|Win32.Build.0 = Debug|Win32
+		{1DA81935-93AB-EB77-C524-DAF7147F6BDC}.Release|Win32.ActiveCfg = Release|Win32
+		{1DA81935-93AB-EB77-C524-DAF7147F6BDC}.Release|Win32.Build.0 = Release|Win32
+		{8D767B93-597E-1C11-83DE-E2AE090494C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D767B93-597E-1C11-83DE-E2AE090494C7}.Debug|Win32.Build.0 = Debug|Win32
+		{8D767B93-597E-1C11-83DE-E2AE090494C7}.Release|Win32.ActiveCfg = Release|Win32
+		{8D767B93-597E-1C11-83DE-E2AE090494C7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

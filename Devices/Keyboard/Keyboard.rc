@@ -1,0 +1,351 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Device DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Device\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Device.DLL\0"
+            VALUE "ProductName", "Device Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Greek resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ELL)
+#ifdef _WIN32
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Keyboard.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KEYBOARD_DLG DIALOGEX 0, 0, 240, 105
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Keyboard"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Esc",IDC_BUTTON_0,0,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      " \nA",IDC_BUTTON_1,30,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      " \nB",IDC_BUTTON_2,60,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nC",IDC_BUTTON_3,90,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nD",IDC_BUTTON_4,120,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nE",IDC_BUTTON_5,150,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nF",IDC_BUTTON_6,180,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Back\nSpace",IDC_BUTTON_7,210,0,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nQ",IDC_BUTTON_8,0,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      " \nW",IDC_BUTTON_9,30,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      " \nR",IDC_BUTTON_10,60,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nT",IDC_BUTTON_11,90,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nY",IDC_BUTTON_12,120,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nU",IDC_BUTTON_13,150,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nI",IDC_BUTTON_14,180,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nO",IDC_BUTTON_15,210,21,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "\nP",IDC_BUTTON_16,0,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      " \nS",IDC_BUTTON_17,30,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "1\nG",IDC_BUTTON_18,60,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "2\nH",IDC_BUTTON_19,90,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "3\nJ",IDC_BUTTON_20,120,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "4\nK",IDC_BUTTON_21,150,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      ",\nL",IDC_BUTTON_22,180,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Space",IDC_BUTTON_23,210,42,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "5\nX",IDC_BUTTON_24,0,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "6\nV",IDC_BUTTON_25,30,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "7\nN",IDC_BUTTON_26,60,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "8\nM",IDC_BUTTON_27,90,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "9\nZ",IDC_BUTTON_28,120,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "0\n ",IDC_BUTTON_29,150,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      ":\n ",IDC_BUTTON_30,180,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Enter",IDC_BUTTON_31,210,63,30,21,BS_MULTILINE,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Shift",IDC_BUTTON_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,0,84,30,21,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Control",IDC_BUTTON_CONTROL,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,30,84,30,21,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Shift",IDC_BUTTON_SHIFT2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,210,84,30,21,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Control",IDC_BUTTON_CONTROL2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,180,84,30,21,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_ABOUT_DLG DIALOGEX 0, 0, 207, 47
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About Keyboard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,150,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,22,50,14
+    LTEXT           "Keyboard v1.1",IDC_STATIC,45,15,100,10
+    LTEXT           "(c) Copyright 2000 Emc/d.",IDC_STATIC,45,25,100,10
+    CONTROL         4004,IDC_STATIC,"Static",SS_BITMAP,14,14,21,20
+END
+
+IDD_CONFIG_DLG DIALOGEX 0, 0, 117, 42
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Device X Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,25,50,14
+    EDITTEXT        IDC_SAMPLE_EDIT,65,5,25,15,ES_AUTOHSCROLL
+    LTEXT           "Port A",IDC_STATIC,25,10,30,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_KEYBOARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_ABOUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "About",                       ID_MENU_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ABOUT_BITMAP        BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDC_BUTTON_1,           VIRTKEY, NOINVERT
+    "B",            IDC_BUTTON_2,           VIRTKEY, NOINVERT
+    "C",            IDC_BUTTON_3,           VIRTKEY, NOINVERT
+    "D",            IDC_BUTTON_4,           VIRTKEY, NOINVERT
+    "E",            IDC_BUTTON_5,           VIRTKEY, NOINVERT
+    "F",            IDC_BUTTON_6,           VIRTKEY, NOINVERT
+    "G",            IDC_BUTTON_18,          VIRTKEY, NOINVERT
+    "H",            IDC_BUTTON_19,          VIRTKEY, NOINVERT
+    "I",            IDC_BUTTON_14,          VIRTKEY, NOINVERT
+    "J",            IDC_BUTTON_20,          VIRTKEY, NOINVERT
+    "K",            IDC_BUTTON_21,          VIRTKEY, NOINVERT
+    "L",            IDC_BUTTON_22,          VIRTKEY, NOINVERT
+    "M",            IDC_BUTTON_27,          VIRTKEY, NOINVERT
+    "N",            IDC_BUTTON_26,          VIRTKEY, NOINVERT
+    "O",            IDC_BUTTON_15,          VIRTKEY, NOINVERT
+    "P",            IDC_BUTTON_16,          VIRTKEY, NOINVERT
+    "Q",            IDC_BUTTON_8,           VIRTKEY, NOINVERT
+    "R",            IDC_BUTTON_10,          VIRTKEY, NOINVERT
+    "S",            IDC_BUTTON_17,          VIRTKEY, NOINVERT
+    "T",            IDC_BUTTON_11,          VIRTKEY, NOINVERT
+    "U",            IDC_BUTTON_13,          VIRTKEY, NOINVERT
+    "V",            IDC_BUTTON_25,          VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_BUTTON_31,          VIRTKEY, NOINVERT
+    VK_SPACE,       IDC_BUTTON_23,          VIRTKEY, NOINVERT
+    "W",            IDC_BUTTON_9,           VIRTKEY, NOINVERT
+    "X",            IDC_BUTTON_24,          VIRTKEY, NOINVERT
+    "Y",            IDC_BUTTON_12,          VIRTKEY, NOINVERT
+    "Z",            IDC_BUTTON_28,          VIRTKEY, NOINVERT
+END
+
+#endif    // Greek resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Keyboard.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
