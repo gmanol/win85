@@ -3,8 +3,8 @@ pStr="Win85 is made available under the MIT License.\r\n\
 \r\n\
 Copyright (c) 2000-2013 George Manolaros\r\n\
 \r\n\
-http://pythagoras.physics.upatras.gr/~gmanol\r\n\
-gmanol@physics.upatras.gr\r\n\
+http://deus.gr/win85\r\n\
+emc@deus.gr\r\n\
 \r\n\
 Permission is hereby granted, free of charge, to any person\r\n\
 obtaining a copy of this software and associated documentation\r\n\
